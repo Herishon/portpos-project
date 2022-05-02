@@ -1,0 +1,633 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+/*
+Name: PortPos website
+Developed by Herishon on 25 January, 2022
+*/
+
+
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800&display=swap');
+
+/* --- Universal Styles --- */
+
+:root {
+	--montserrat: 'Montserrat', sans-serif;
+	--pricol: #668e0c;
+	--seccol: #353a4d;
+	--thicol: #282C3B;
+}
+
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: var(--montserrat);
+	font-size: 16px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.nav {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.navbar-collapse.show {
+	transition: all 5s ease-in;
+	animation: Anime 0.2s;
+}
+
+@keyframes Anime {
+	from{
+		opacity: 0.3;
+		transform: translateY(-20px);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.navbar .nav-link:hover {
+	color: var(--pricol) !important;
+	text-decoration: underline;
+}
+
+.btn-custom {
+	background-color: transparent;
+	border: 0.06rem solid #d4d4d4;
+	border-radius: 0.31rem;
+	-webkit-transition: all 0.3s ease-in;
+	-o-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.btn-custom:hover {
+	background-color: #ededed;
+	border: 0.06rem solid #ededed;
+}
+
+
+/* --- Header --- */
+
+header {
+	background-color: var(--thicol);
+	color: #fff;
+}
+
+header .logo {
+	width: 9rem;
+	max-width: 100%;
+	height: auto;
+}
+
+header .navbar-toggler {
+	line-height: 0;
+}
+
+header .hamburger-menu {
+	display: none;
+	width: 25px;
+	height: auto;
+	line-height: 0.2;
+	cursor: pointer;
+}
+
+header .bars {
+	width: 100%;
+	height: 2px;
+	display: inline-block;
+	background-color: #EFEEEE;
+	margin: 0;
+	line-height: 0;
+	padding: 0;
+	-webkit-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in;
+}
+
+
+/* Hamburger close */
+
+header .hamburger-menu.close_menu .bars:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+header .hamburger-menu.close_menu .bars:nth-child(2) {
+	opacity: 0;
+}
+
+header .hamburger-menu.close_menu .bars:nth-child(3) {
+	transform: translateY(-6px) rotate(-45deg);
+}
+
+header .navbar-collapse {
+	-ms-flex-preferred-size: 100% !important;
+	flex-basis: 100% !important;
+	text-align: center;
+	-webkit-transition: all 5s ease-in;
+	-o-transition: all 5s ease-in;
+	transition: all 5s ease-in;
+}
+
+header .navbar-nav {
+	margin-left: auto !important;
+}
+
+header .nav-item:not(:last-child) {
+	margin-right: 1.09rem;
+}
+
+header .nav-link {
+	font-size: 1rem;
+	color: #fff !important;
+	font-weight: 300;
+}
+
+
+/* Small Section-1 */
+
+.sm-section-1 {
+	background-color: var(--pricol);
+	padding: 0.7rem 0;
+}
+
+.sm-section-1 h3 {
+	font-family: var(--montserrat);
+	font-size: 1.06rem;
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+
+/* Banner */
+
+.banner {
+	text-align: center;
+	padding-top: 3.5rem;
+}
+
+.banner .banner-title {
+	font-size: 2rem;
+	font-weight: 400;
+	margin-bottom: 2.2rem;
+}
+
+.banner .banner-text {
+	font-size: 1.12rem;
+	font-weight: 400;
+}
+
+.banner .some-text1 {
+	margin-bottom: 2rem;
+}
+
+.banner .some-text2,
+.banner .some-text3 {
+	margin-bottom: 3.49rem;
+}
+
+.banner .mobile-img {
+	width: 90%;
+}
+
+
+/* Small Section-2 */
+
+.sm-section-2 {
+	padding: 2.6rem 0;
+}
+
+.sm-section-2 p {
+	font-size: 1.43rem;
+	font-weight: 400;
+	color: var(--thicol);
+}
+
+
+/* Features */
+
+.features {
+	background: -webkit-gradient(linear, left top, right top, from(rgba(36, 36, 36, 0.4)), to(rgba(54, 54, 54, 0.4))), url(../assets/payment-2-bg.jpeg);
+	background: -o-linear-gradient(left, rgba(36, 36, 36, 0.4), rgba(54, 54, 54, 0.4)), url(../assets/payment-2-bg.jpeg);
+	background: linear-gradient(to right, rgba(36, 36, 36, 0.4), rgba(54, 54, 54, 0.4)), url(../assets/payment-2-bg.jpeg);
+	background-position: center center;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 5rem 0;
+}
+
+.features .logo-img {
+	width: 12.5rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.features .text1 {
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.features .text2 {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.features .pci-logo {
+	width: 17rem;
+	max-width: 100%;
+	height: auto;
+}
+
+.features .col-2 {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.features .col-2,
+.features .col-10 {
+	padding-left: 0 !important;
+}
+
+.features .fa-arrow-alt-circle-right {
+	font-size: 1.8rem;
+}
+
+.features .list-group-item {
+	display: inline-block;
+	width: auto;
+	font-size: 1.5rem;
+	background-color: transparent;
+	padding: 0.75rem 0 0.75rem 1.25rem;
+	border: 0;
+}
+
+.features .list-group-item-action {
+	color: #fff;
+}
+
+.features .list-group-item-action:hover {
+	color: var(--pricol);
+}
+
+.features .clients-logo {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Sell Online */
+
+.sell-online {
+	background-color: #F5F9FA;
+	padding: 4rem 0;
+}
+
+.sell-online .sell-online-title {
+	font-size: 1.93rem;
+	color: var(--thicol);
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.sell-online .sell-online-text {
+	font-size: 1.10rem;
+	color: var(--thicol);
+	font-weight: 400;
+}
+
+.sell-online .int-txt {
+	font-size: 1.43rem;
+	color: var(--thicol);
+	font-weight: 500;
+	margin-bottom: 2.4rem;
+}
+
+.sell-online .bring-txt {
+	font-size: 1.10rem;
+	color: var(--thicol);
+	font-weight: 400;
+	margin-bottom: 1.5rem;
+}
+
+.sell-online .learn-more,
+.sell-online .business-signup {
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: var(--seccol);
+	padding: 0.56rem 1.8rem;
+	margin: 0.31rem;
+}
+
+.sell-online .learn-more {
+	margin-right: 0.5rem;
+}
+
+.sell-online .sell-online-img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/* Small Section */
+
+.sm-section-3 {
+	padding: 2.6rem 0;
+}
+
+.sm-section-3 p {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-bottom: 0;
+}
+
+
+/* --- Developer Section --- */
+
+.developer {
+	background-color: #F5F9FA;
+	padding: 6rem 0;
+}
+
+.developer .dev-img {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+
+.developer .dev-title {
+	font-size: 1.6rem;
+	color: var(--seccol);
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+
+.developer p {
+	font-size: 1.10rem;
+	color: var(--seccol);
+	font-weight: 400;
+	margin-bottom: 2.5rem;
+}
+
+.developer .read {
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: var(--seccol);
+	padding: 0.56rem 1.8rem;
+}
+
+
+/* Pre-built integration */
+
+.pre-built-integration {
+	background-color: #EFEEEE;
+	padding: 5rem 0;
+}
+
+.pre-built-integration .pre-built-title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	color: var(--seccol);
+	margin-bottom: 2rem;
+}
+
+.pre-built-integration .plugins {
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: var(--seccol);
+	padding: 0.56rem 1.8rem;
+}
+
+.pre-built-integration .plugin-img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Why PortPos */
+
+.why-portpos {
+	padding: 5rem 0;
+}
+
+.why-portpos .why-portpos-sub-title {
+	color: var(--pricol);
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-bottom: 3.2rem;
+}
+
+.why-portpos .why-portpos-title {
+	color: rgb(56, 56, 56);
+	font-weight: 500;
+	font-size: 2rem;
+	margin-bottom: 4rem;
+}
+
+.why-portpos h5 {
+	color: var(--seccol);
+	font-weight: 300;
+	font-size: 1.10rem;
+	margin-bottom: 1.5rem;
+}
+
+.why-portpos .text {
+	font-size: 1.12rem;
+	color: #000;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+
+/* Ecommerce Site */
+
+.ecommerce-site {
+	background-color: #F5F9FA;
+	padding: 3.5rem 0;
+}
+
+.ecommerce-site .ecommerce-site-title {
+	color: var(--seccol);
+	font-weight: 500;
+	font-size: 1.9rem;
+	margin-bottom: 1.7rem;
+}
+
+.ecommerce-site .text-1 {
+	color: var(--seccol);
+	font-weight: 400;
+	font-size: 1.1rem;
+	margin-bottom: 3.2rem;
+}
+
+.ecommerce-site .sub-title {
+	color: rgb(56, 56, 56);
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-bottom: 2.8rem;
+}
+
+.ecommerce-site .ecommerce-site-img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 2rem;
+}
+
+.ecommerce-site .sendbill {
+	font-size: 1.3rem;
+}
+
+.ecommerce-site .learn-more {
+	font-size: 0.7rem;
+	font-weight: 400;
+	color: var(--seccol);
+	padding: 0.56rem 1.8rem;
+}
+
+
+/* Get Started */
+
+.get-started {
+	background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 47, 0.657)), to(rgba(44, 42, 71, 0.513))), url(../assets/get-started-bg.webp);
+	background: -o-linear-gradient(right, rgba(41, 40, 47, 0.657), rgba(44, 42, 71, 0.513)), url(../assets/get-started-bg.webp);
+	background: linear-gradient(to left, rgba(41, 40, 47, 0.657), rgba(44, 42, 71, 0.513)), url(../assets/get-started-bg.webp);
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 6rem 0;
+}
+
+.get-started .get-started-title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.get-started .text-light {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 2.3rem;
+}
+
+.get-started .learn-more {
+	background-color: #fff;
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: var(--seccol);
+	margin-right: 0.5rem;
+	margin: 0.31rem;
+	border: 1px solid #fff;
+	padding: 0.56rem 1.8rem;
+}
+
+.get-started .learn-more:hover {
+	background-color: transparent;
+	border: 1px solid rgb(104, 104, 104);
+	color: #fff;
+}
+
+.get-started .signup {
+	background-color: #8fbb2c;
+	background-image: -webkit-gradient(linear, right top, left top, from(#33a9d0), to(#8fbb2c));
+	background-image: -o-linear-gradient(right, #33a9d0, #8fbb2c);
+	background-image: linear-gradient(270deg, #33a9d0, #8fbb2c);
+	font-size: 0.7rem;
+	font-weight: 700;
+	color: #fff;
+	border: 0;
+	margin: 0.31rem;
+	padding: 0.63rem 1.8rem;
+}
+
+.get-started .signup:hover {
+	-webkit-box-shadow: 0 0.3rem 1rem rgba(143, 187, 44, 0.5);
+	box-shadow: 0 0.3rem 1rem rgba(143, 187, 44, 0.5);
+}
+
+
+/* --- Footer --- */
+
+.footer {
+	background-color: #282C3B;
+	color: #fff;
+	padding: 3rem 0;
+}
+
+.footer .nav .nav-link {
+	color: #fff;
+}
+
+.footer .nav .nav-link:hover {
+	color: var(--pricol);
+	text-decoration: underline;
+}
+
+
+/* Modal Box */
+
+.myModal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	z-index: 1;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+.myModal .close_btn {
+	float: right;
+	display: inline-block;
+	width: 1.25rem;
+	height: 1.25rem;
+	font-size: 3.12rem;
+	font-weight: 300;
+	color: #000000;
+	cursor: pointer;
+	margin-right: 1.87rem;
+}
+
+.myModal .close:hover {
+	color: #080808;
+}
+
+.myModal .modal_content {
+	width: 36.25rem;
+	background-color: #fefefe;
+	margin: auto;
+}
+
+.myModal .modal_inner {
+	padding: 3.12rem 1.56rem;
+}
+
+.myModal .modal_img {
+	width: 100%;
+	height: auto;
+}

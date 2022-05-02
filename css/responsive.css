@@ -1,0 +1,174 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
+/* =================== */
+
+
+/* === MEDIA QUERY === */
+
+
+/* =================== */
+
+@media only screen and (max-width: 400px) {
+
+	.banner .banner-title {
+		font-size: 24px;
+	}
+
+	.banner .banner-text {
+		font-size: 16px;
+	}
+
+	.sm-section-2 p,
+	.sm-section-3 p {
+		font-size: 18px;
+	}
+
+	.features .text1 {
+		font-size: 18px;
+	}
+
+	.features .text2 {
+		font-size: 16px;
+	}
+
+	.features .list-group-item {
+		font-size: 19px;
+	}
+
+	.sell-online .sell-online-title {
+		font-size: 1.80rem;
+	}
+
+	.sell-online .int-txt {
+		font-size: 1.20rem;
+	}
+
+	.why-portpos .why-portpos-sub-title {
+		font-size: 17px;
+	}
+
+	.why-portpos .why-portpos-title {
+		font-size: 27px;
+	}
+
+	.why-portpos .text {
+		font-size: 16px;
+	}
+
+	.ecommerce-site .ecommerce-site-title {
+		font-size: 25px;
+	}
+
+	.ecommerce-site .sub-title {
+		font-size: 21px;
+	}
+	.ecommerce-site .sendbill {
+		font-size: 18px;
+	}
+
+	.get-started .get-started-title {
+		font-size: 22px;
+	}
+
+	.get-started .text-light {
+		font-size: 15px;
+	}
+
+}
+
+@media only screen and (max-width: 575px) {
+
+	.myModal {
+		padding: 10% 0;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+	
+	.banner .bcl-2,
+	.banner .bcl-3 {
+		margin-top: 50px;
+	}
+
+	.banner .bcl-text {
+		margin-bottom: 24px;
+	}
+
+	.sell-online .scl-2 {
+		margin-top: 50px;
+	}
+
+	.developer .dcl-2 {
+		margin-top: 50px;
+	}
+
+	.pre-built-integration .precl-2 {
+		margin-top: 50px;
+	}
+
+	.why-portpos .wcl-2,
+	.why-portpos .wcl-3,
+	.why-portpos .wcl-4 {
+		margin-top: 30px;
+	}
+
+	.footer .col-md-4 {
+		-webkit-box-align: center !important;
+		-ms-flex-align: center !important;
+		align-items: center !important;
+	}
+
+	.footer .col-md-8 {
+		-webkit-box-align: center !important;
+		-ms-flex-align: center !important;
+		align-items: center !important;
+	}
+
+	.footer .nav {
+		margin-left: 0 !important;
+	}
+
+	.footer .copy_right,
+	.footer .all_rights {
+		font-size: 14px;
+		-webkit-box-pack: center !important;
+		-ms-flex-pack: center !important;
+		justify-content: center !important;
+	}
+
+	.myModal .modal_content {
+		width: 100%;
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	header .hamburger-menu {
+		display: block;
+	}
+
+	.footer .nav {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		text-align: center;
+	}
+
+}
+
+@media only screen and (max-width: 1199px) {
+
+	header .navbar-nav {
+		margin-left: 50px !important;
+	}
+
+}
